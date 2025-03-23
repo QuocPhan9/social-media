@@ -15,7 +15,7 @@ export const SocketContextProvider = ({children}) => {
 
     useEffect(() => {
         if(user.token) {
-            const socket = io("http://localhost:5000", {
+            const socket = io("http://social-media-server-eta-seven.vercel.app", {
                 query: {
                     userId: user._id
                 }
