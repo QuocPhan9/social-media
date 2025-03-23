@@ -2,7 +2,7 @@ import axios from 'axios'
 import { SetPosts } from '../redux/redux/postSlice';
 
 
-const API_URL = "http://localhost:5000";
+const API_URL = "http://social-media-backend-bay-five.vercel.app";
 
 export const API = axios.create({
     baseURL: API_URL,
