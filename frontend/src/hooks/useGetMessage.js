@@ -13,7 +13,7 @@ const useGetMessage = () => {
             setLoading(true);
 
             try {
-                const res = await fetch(`http://social-media-backend-kappa-seven.vercel.app/message/${selectedConversation._id}`,{
+                const res = await fetch(`http://social-media-server-indol.vercel.app/message/${selectedConversation._id}`,{
                     method:"GET",
                     headers: {
                         'Content-Type' : 'application/json',
