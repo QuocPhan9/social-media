@@ -2,7 +2,7 @@ import axios from 'axios'
 import { SetPosts } from '../redux/redux/postSlice';
 
 
-const API_URL = "http://social-media-server-eta-seven.vercel.app";
+const API_URL = "https://social-media-server-eta-seven.vercel.app";
 
 export const API = axios.create({
     baseURL: API_URL,
