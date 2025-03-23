@@ -27,7 +27,12 @@ connectMongoDB();
 
 app.use(helmet());
 
-app.use(cors());
+app.use(
+    cors({
+        origin: "https://social-media-vert-eta.vercel.app", // Cho phép frontend truy cập
+        credentials: true,
+    })
+);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
