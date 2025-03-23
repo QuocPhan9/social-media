@@ -1,4 +1,4 @@
-import Comments from "../models/commentModel.js";
+import Comments from "../models/CommentModel.js";
 import Notification from "../models/notificationModel.js";
 import Posts from "../models/PostModel.js";
 import Users from "../models/UserModel.js";
