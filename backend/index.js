@@ -21,7 +21,7 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, "views/build")));
 
-const PORT = process.env.PORT || 5000;
+const PORT = Number(process.env.PORT) || 5000;
 
 connectMongoDB();
 
@@ -42,6 +42,6 @@ app.use(router);
 app.use(errorMiddleware);
 
 
-server.listen(PORT, () => {
+server.listen(PORT, "0.0.0.0", () => {
     console.log(`Dev server running on port: ${PORT}`);
 })
