@@ -15,7 +15,7 @@ export const SocketContextProvider = ({children}) => {
 
     useEffect(() => {
         if(user.token) {
-            const socket = io("http://social-media-backend-bay-five.vercel.app", {
+            const socket = io("http://social-media-backend-kappa-seven.vercel.app", {
                 query: {
                     userId: user._id
                 }

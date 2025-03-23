@@ -14,7 +14,7 @@ const useSendMessage = () => {
         setLoading(true);
 
         try {
-            const res = await fetch(`http://social-media-backend-bay-five.vercel.app/message/send/${selectedConversation._id}`,{
+            const res = await fetch(`http://social-media-backend-kappa-seven.vercel.app/message/send/${selectedConversation._id}`,{
                 method: 'POST',
                 headers: {
                     'Content-Type' : 'application/json',
